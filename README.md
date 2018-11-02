@@ -8,13 +8,12 @@ Mandatory settings:
 * Path to executable JAR file
 
 Optional settings:
-* Arg1
-* Arg2
-* Arg3
+* Arguments
 
-For the optional argument settings you can use some placeholders. The placeholders will be automatically replaced by the extension.
+For the optional arguments setting you can use some placeholders. The placeholders will be automatically replaced by the extension.
 
 | Placeholder   | Value                              |
 | ------------- | ---------------------------------- |
 | $currentFile  | current opened file in text editor |
 
+![Example Settings](https://github.com/silb78/vscode-jarexecutor/exampleSettings.jpg)

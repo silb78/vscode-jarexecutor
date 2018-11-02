@@ -28,18 +28,10 @@
 						"type": "string",
 						"description": "Path to an executable jar file"
                     },
-                    "jarexecutor.arg1": {
+                    "jarexecutor.arguments": {
 						"type": "string",
-						"description": "Optional argument 1"
-                    },
-                    "jarexecutor.arg2": {
-						"type": "string",
-						"description": "optional argument 2"
-                    },
-                    "jarexecutor.arg3": {
-						"type": "string",
-						"description": "Optional argument 3"
-					}
+						"description": "Optional arguments"
+                    }
 				}
 			}
         ],
