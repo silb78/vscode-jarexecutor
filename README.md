@@ -16,4 +16,4 @@ For the optional arguments setting you can use some placeholders. The placeholde
 | ------------- | ---------------------------------- |
 | $currentFile  | current opened file in text editor |
 
-![Example Settings](https://github.com/silb78/vscode-jarexecutor/exampleSettings.jpg)
+![Example Settings](https://github.com/silb78/vscode-jarexecutor/blob/master/exampleSettings.jpg)
