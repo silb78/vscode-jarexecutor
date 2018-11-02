@@ -23,7 +23,7 @@ It's possible to you use some placeholders. The placeholders will be automatical
 
 1. clone git repo
 
-2. install Visual Studio Code Extension
+2. install Visual Studio Code Extension Tool
 ```
 npm install -g vsce
 ```
