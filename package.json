@@ -1,0 +1,66 @@
+{
+    "name": "jarexecutor",
+    "displayName": "JAR Executor",
+    "description": "generic JAR Executor",
+    "version": "1.0.0",
+    "publisher": "silvan-brenner",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.runJarExecutor"
+    ],
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/silb78/vscode-jarexecutor.git"
+    },
+    "main": "./out/extension",
+    "contributes": {
+        "configuration": [
+			{
+                "title": "JAR Executor",
+                "type": "object",
+				"properties": {
+					"jarexecutor.path": {
+						"type": "string",
+						"description": "Path to an executable jar file"
+                    },
+                    "jarexecutor.arg1": {
+						"type": "string",
+						"description": "Optional argument 1"
+                    },
+                    "jarexecutor.arg2": {
+						"type": "string",
+						"description": "optional argument 2"
+                    },
+                    "jarexecutor.arg3": {
+						"type": "string",
+						"description": "Optional argument 3"
+					}
+				}
+			}
+        ],
+        "commands": [
+            {
+                "command": "extension.runJarExecutor",
+                "title": "Run JAR Executor"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
+}
