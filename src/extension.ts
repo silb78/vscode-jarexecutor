@@ -1,6 +1,7 @@
 'use strict';
 import * as vscode from 'vscode';
 import {window} from 'vscode';
+import ExtensionUtil from './extensionUtil';
 
 export function activate(context: vscode.ExtensionContext) {
     let disposable = vscode.commands.registerCommand('extension.runJarExecutor', () => {
@@ -16,8 +17,9 @@ export function activate(context: vscode.ExtensionContext) {
                 var executeCommand = 'java -jar';
                 executeCommand = executeCommand + ' ' + configPath;
                 if(configArgs) {
-                    executeCommand = parseArguments(editor, executeCommand, configArgs);  
+                    executeCommand = ExtensionUtil.parseCommand(editor.document.uri.fsPath, executeCommand, configArgs);
                 }
+                console.log('execute command: ' + executeCommand)
                 exec(executeCommand, function (error, stdout, stderr) {
                     if(error !== null) {
                         console.log('exec error: ' + error);
@@ -46,9 +48,3 @@ export function deactivate() {
     // do nothing
 }
 
-function parseArguments(editor: vscode.TextEditor, executeCommand: string, args) {
-    executeCommand = executeCommand + ' ' + args;
-    executeCommand = executeCommand.replace("$currentFile", editor.document.uri.fsPath);
-
-    return executeCommand;
-}

@@ -1,10 +1,15 @@
 import * as assert from 'assert';
+import ExtensionUtil from '../extensionUtil';
+
 
 suite("Extension Tests", function () {
 
-    // simple unit test
-    test("Something 1", function() {
-        assert.equal(-1, [1, 2, 3].indexOf(5));
-        assert.equal(-1, [1, 2, 3].indexOf(0));
+    test("testParseCommand", function() {
+        let result = ExtensionUtil.parseCommand('openfile.xml','test.jar','args');
+        assert.equal('test.jar args', result);
+
+        result = ExtensionUtil.parseCommand('openfile.xml','test.jar','$currentFile args');
+        assert.equal('test.jar openfile.xml args', result);
     });
+
 });
