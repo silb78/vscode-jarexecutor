@@ -1,11 +1,11 @@
 {
     "name": "jarexecutor",
     "displayName": "JAR Executor",
-    "description": "simple extension to execute a jar file",
-    "version": "1.0.2",
+    "description": "Simple extension to execute a jar file",
+    "version": "1.0.3",
     "publisher": "silvan-brenner",
     "engines": {
-        "vscode": "^1.35.0"
+        "vscode": "^1.40.1"
     },
     "categories": [
         "Other"
