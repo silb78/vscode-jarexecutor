@@ -1,5 +1,3 @@
-![Node CI](https://github.com/silvanbrenner/vscode-jarexecutor/workflows/Node%20CI/badge.svg)
-
 # JAR Executor
 
 Simple extension to execute a jar file from Visual Studio Code.
