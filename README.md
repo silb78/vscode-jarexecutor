@@ -1,4 +1,4 @@
-https://github.com/silvanbrenner/vscode-jarexecutor/workflows/Node%20CI/badge.svg
+![Node CI](https://github.com/silvanbrenner/vscode-jarexecutor/workflows/Node%20CI/badge.svg)
 
 # JAR Executor
 
