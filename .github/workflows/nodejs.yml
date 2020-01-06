@@ -23,6 +23,5 @@ jobs:
         npm install -g vsce
         npm install
         vsce package
-        npm test
       env:
         CI: true
