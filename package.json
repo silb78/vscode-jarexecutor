@@ -2,10 +2,10 @@
     "name": "jarexecutor",
     "displayName": "JAR Executor",
     "description": "Simple extension to execute a jar file",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "silvan-brenner",
     "engines": {
-        "vscode": "^1.40.1"
+        "vscode": "^1.46.1"
     },
     "categories": [
         "Other"
@@ -56,8 +56,8 @@
     "devDependencies": {
         "@types/mocha": "^5.2.7",
         "@types/node": "^13.1.4",
-        "ts-mockito": "^2.5.0",
-        "typescript": "^3.7.4",
-        "vscode": "^1.1.36"
+        "ts-mockito": "^2.6.1",
+        "typescript": "^3.9.9",
+        "vscode": "^1.1.37"
     }
 }

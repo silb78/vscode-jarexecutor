@@ -17,7 +17,7 @@ It's possible to you use some placeholders. The placeholders will be automatical
 | $currentFile  | current opened file in text editor |
 | $extPath      | path of **JAR Executor** extension |
 
-![Example Settings](https://github.com/silb78/vscode-jarexecutor/blob/master/exampleSettings.jpg)
+![Example Settings](https://github.com/silvanbrenner/vscode-jarexecutor/blob/master/exampleSettings.jpg)
 
 ## How to build the extension
 
